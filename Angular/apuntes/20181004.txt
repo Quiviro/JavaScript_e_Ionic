@@ -17,3 +17,4 @@ https://github.com/angular/angularfire2
 https://github.com/angular/angularfire2/blob/master/docs/install-and-setup.md
 firebase.google.com
 
+ng g service ruta/nombre

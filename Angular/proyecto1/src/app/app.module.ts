@@ -20,6 +20,8 @@ import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
+import { EmpleadosComponent } from './empleados/empleados.component';
+import { BbddService } from './conexion/bbdd.service';
 
 // creo las rutas necesarias
 const rutas: Routes = [
@@ -36,7 +38,8 @@ const rutas: Routes = [
     NavbarComponent,
     ContactoComponent,
     PatronComponent,
-    DirectivaPropiaDirective
+    DirectivaPropiaDirective,
+    EmpleadosComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,7 @@ const rutas: Routes = [
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule // imports firebase/storage only needed for storage features
   ],
-  providers: [],
+  providers: [BbddService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

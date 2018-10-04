@@ -7,10 +7,13 @@
 <app-micomponente></app-micomponente>
 <br><br>
 <br><br>
+<p>Muestro items desde la base de datos de Firebase</p>
 <ul>
 <li class="text" *ngFor="let item of items | async">
   {{item.nombre}}
 </li>
 </ul>
+<br>
+<app-empleados></app-empleados>
 
 
