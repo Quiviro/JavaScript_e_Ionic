@@ -2,9 +2,15 @@
 <h1>
   ¡Hola Mundo {{ title }}!
 </h1>
+<!-- esta etiqueta mira las rutas añadidas/modificadas en app.module.ts -->
+<router-outlet></router-outlet>
 <app-micomponente></app-micomponente>
 <br><br>
- <!-- <app-contacto></app-contacto> -->
- <!-- esta etiqueta mira las rutas añadidas/modificadas en app.module.ts -->
- <router-outlet></router-outlet>
+<br><br>
+<ul>
+<li class="text" *ngFor="let item of items | async">
+  {{item.nombre}}
+</li>
+</ul>
+
 

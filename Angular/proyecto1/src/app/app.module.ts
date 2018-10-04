@@ -14,6 +14,13 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { PatronComponent } from './patron/patron.component';
 import { DirectivaPropiaDirective } from './patron/directiva-propia.directive';
 
+// Firebase
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+
 // creo las rutas necesarias
 const rutas: Routes = [
   // si la ruta es "contacto", ejecuta el componente "Contacto"
@@ -35,7 +42,11 @@ const rutas: Routes = [
     BrowserModule,
     // le indico el tema de la ruta
     RouterModule.forRoot(rutas),
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase), // imports firebase/app needed for everything
+    AngularFirestoreModule, // imports firebase/firestore, only needed for database features
+    AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
+    AngularFireStorageModule // imports firebase/storage only needed for storage features
   ],
   providers: [],
   bootstrap: [AppComponent]
