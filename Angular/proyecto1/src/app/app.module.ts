@@ -28,7 +28,8 @@ const rutas: Routes = [
   // si la ruta es "contacto", ejecuta el componente "Contacto"
   {path:"contacto", component:ContactoComponent},
   // normalmente, por SEO y eso, mandaríamos a una página 404
-  {path:"**", redirectTo:"/", pathMatch:"full"}
+  {path:"**", redirectTo:"/", pathMatch:"full"},
+  {path:"empleados", component:EmpleadosComponent}
 ];
 
 @NgModule({

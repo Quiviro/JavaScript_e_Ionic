@@ -24,14 +24,14 @@ export class BbddService {
     this.persona = this.elementosColeccion.valueChanges();
   }
 
-  /* anadeUser()
+  anadeEmpleado(nuevoEmpleado:Empleado)
   {
-    this.elementosColeccion.add();
+    this.elementosColeccion.add(nuevoEmpleado);
   }
   borraUser()
   {}
   actualizaUser()
-  {} */
+  {}
 
   public muestraPersonas()
   {

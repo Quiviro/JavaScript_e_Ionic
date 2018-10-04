@@ -1,7 +1,27 @@
 
 <p>Muestro empleados desde la base de datos de Firebase mediante un servicio creado</p>
+
 <ul>
 <li *ngFor="let empleado of empleados">
   {{empleado.nombre}} {{empleado.apellidos}}, de la ciudad de {{empleado.ciudad}}
 </li>
 </ul>
+<br>
+<form (ngSubmit)='agregarEmpleado()' style="border: 1px solid blue;padding:10px">
+  <p>Nombre<br>
+    <input type="text" name="nombre" [(ngModel)]= "nuevoEmpleado.nombre">
+  <span> {{ nuevoEmpleado.nombre }}</span>
+  </p>
+  <p>Apellidos<br>
+    <input type="text" name="apellidos" [(ngModel)]= "nuevoEmpleado.apellidos">
+    <span> {{ nuevoEmpleado.apellidos }}</span>
+  </p>
+  <p>Ciudad<br>
+    <input type="text" name="ciudad" [(ngModel)]= "nuevoEmpleado.ciudad">
+    <span> {{ nuevoEmpleado.ciudad }}</span>
+  </p>
+  <button type="submit" class="btn-info">Añadir empleado</button>
+</form>
+
+
+<br>
