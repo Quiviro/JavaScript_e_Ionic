@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { MicomponenteComponent } from './micomponente/micomponente.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { PatronComponent } from './patron/patron.component';
 
 // creo las rutas necesarias
 const rutas: Routes = [
@@ -25,7 +26,8 @@ const rutas: Routes = [
     AppComponent,
     MicomponenteComponent,
     NavbarComponent,
-    ContactoComponent
+    ContactoComponent,
+    PatronComponent
   ],
   imports: [
     BrowserModule,

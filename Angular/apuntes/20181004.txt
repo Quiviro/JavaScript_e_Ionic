@@ -4,3 +4,8 @@ blog.ng-classroom.com/blog/tips/typescript-fundamentos
 
 https://github.com/Quiviro/JavaScript_e_Ionic
 
+git init
+git remote add origin ruta_repositorio_remoto.git
+git commit -m "mensaje"
+git push -u origin master
+
