@@ -10,3 +10,9 @@ git add *
 git commit -m "mensaje"
 git push -u origin master
 
+ng g directive ruta/nombre
+ng g pipe nombre
+
+https://github.com/angular/angularfire2
+firebase.google.com
+

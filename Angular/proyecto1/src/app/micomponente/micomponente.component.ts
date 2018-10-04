@@ -15,6 +15,7 @@ export class MicomponenteComponent implements OnInit {
   // creando unas variables y alguna función
   textoUser:String = null;
   botonPulsado:Boolean = false;
+  minusculas:String = "texto en minúsculas que se mayusculiza gracias a 'UpperCasePipe'";
   // ME FALTA CREAR LA CLASE "Alumno" con su constructor y tal (día 2oct)
 /*   alumnos:Alumno[] = [
     new Alumno(1, "Juan", "Gómez", "Madrid"),

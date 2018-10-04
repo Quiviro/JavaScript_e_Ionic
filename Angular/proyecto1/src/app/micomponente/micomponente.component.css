@@ -1,4 +1,16 @@
+/* 
+estas clases solo tienen validez dentro de este componente
+si quiero ajustes globales, tendría que cambiar el archivo styles.css
+*/
 .color
 {
   background: red;
+  border: 2px solid yellow;
+  color: yellow;
+  border-radius: 8px;
+  text-align: center;
+}
+.color::after
+{
+  content: " CHA NA NA NAAAAANNNNNNNNNN"
 }
