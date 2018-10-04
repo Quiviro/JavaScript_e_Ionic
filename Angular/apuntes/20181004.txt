@@ -1,0 +1,6 @@
+../node_module/popper.js/dist/umd/popper.min.js
+
+blog.ng-classroom.com/blog/tips/typescript-fundamentos
+
+https://github.com/Quiviro/JavaScript_e_Ionic
+
