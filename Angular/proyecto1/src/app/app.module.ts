@@ -12,6 +12,7 @@ import { MicomponenteComponent } from './micomponente/micomponente.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { PatronComponent } from './patron/patron.component';
+import { DirectivaPropiaDirective } from './patron/directiva-propia.directive';
 
 // creo las rutas necesarias
 const rutas: Routes = [
@@ -27,7 +28,8 @@ const rutas: Routes = [
     MicomponenteComponent,
     NavbarComponent,
     ContactoComponent,
-    PatronComponent
+    PatronComponent,
+    DirectivaPropiaDirective
   ],
   imports: [
     BrowserModule,
