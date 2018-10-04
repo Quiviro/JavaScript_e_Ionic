@@ -1,0 +1,20 @@
+npm install --save jquery/popper.js/bootstrap
+npm uninstall
+
+Después habría que indicar las rutas respectivas en el archivo "angular.json".
+Quizá es un proceso más complicado que enlazarlo directamente en el "index.html", en el orden indicado en la primera línea.
+
+No le digas a tu responsable senior: "no sé hacer esto". Deja claro siempre que has intentado varias maneras de solucionarlo antes de rendirte.
+
+import * as $ from 'jquery';
+linea para incluir en el archivo .ts de nuestro componente.
+
+ng g c componente --spec false
+crea un componente sin el archivo ...spec.ts, que no lo usamos.
+
+[routerLink]
+<router-outlet>
+[(ngModel)]
+*ngIf
+<ng-template>
+*ngFor

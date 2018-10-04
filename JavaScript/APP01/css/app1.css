@@ -1,0 +1,110 @@
+		body
+		{
+			margin: 0;
+		}
+		#contenedor
+		{
+			position: relative;
+			width: 320px;
+			height: 480px;
+			overflow: auto;
+			padding: 0;
+			margin: 0 auto;
+			border: 1px solid;
+			text-align: justify;
+		}
+		header
+		{
+			background-color: violet;
+			border-radius: 0 0 8px 8px;
+			display: -webkit-flex;
+			display: flex;
+			justify-content: space-between;
+			height: 40px;
+			/***************************/
+			position: -webkit-sticky;
+			position: sticky;
+			/***************************/
+			top: 0;
+			width: 100%;
+		}
+		header, footer
+		{
+			z-index: 9;
+			align-items: center;
+		}
+		header a, footer a
+		{
+			width: 40px;
+			padding: 10px;
+			text-decoration: none;
+		}
+		header a img, footer a img
+		{
+			max-width: 25px;
+	    padding: 4px;
+	    border-radius: 8px;
+		}
+		header a:hover img
+		{
+			background-color: grey;
+
+		}
+		header a:active img
+		{
+			background-color: red;
+		}
+		header a:visited img
+		{
+			background-color: white;
+		}
+		main
+		{
+			padding: 40px 25px 30px;
+			margin: 0;
+			overflow: scroll;
+			position: relative;
+		}
+		#contenedor main p
+		{
+			font-size: 1.2em;
+		}
+		footer
+		{
+			background-color: magenta;
+			border-radius: 8px 8px 0 0;
+			display: -webkit-flex;
+			display: flex;
+			justify-content: space-between;
+	    display: -webkit-flex; /* Safari */
+    	-webkit-align-items: center; /* Safari 7.0+ */
+    	display: flex;
+    	align-items: center;
+			height: 35px;
+			/***************************/
+			position: -webkit-sticky;
+			position: sticky;
+			/***************************/
+			bottom: 0;
+			width: 100%;
+		}
+		img
+		{
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin: auto;
+			padding: 0;
+		}
+		.izquierda
+		{
+			text-align: left;
+		}
+		.centro
+		{
+			text-align: center;
+		}
+		.derecha
+		{
+			text-align: right;
+		}

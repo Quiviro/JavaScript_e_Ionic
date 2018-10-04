@@ -1,0 +1,6 @@
+JS CSS Minify Compress - plugin detail
+http://plugins.netbeans.org/plugin/49666/js-css-minify-compress
+https://github.com/Chris2011/js-css-minify-compress/issues/28
+
+Minification (minify / compress / ) is the process of compression code from the original size to the smallest size and does not affect to the operation of the code.
+Beautification is the process of uncompression the minified code.

@@ -1,0 +1,41 @@
+APP01: no aplica el estilo "header a:visited img".
+
+Nueva etiqueta semántica "time", para indicar la fecha del contenido.
+Validar código W3C.
+NetBeans puede integrar Cordova y Git.
+Visual Studio Code integra Git.
+Pie de página de Quiviro.es, ¿debería estar fijado abajo?
+Portafolio de webs se muestran en marcos simulando móvil o tablet (solo en pantallas grandes).
+SEO: "comprar atabaque".
+<iframe src="..."></iframe>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Quiviro Enquerre">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+</head>
+<noscript>Su navegador no soporta JavaScript</noscript>
+	¿Dentro de la etiqueta <noscript> construyo una versión simplicada de la página?
+CV
+	Atom @ TEIDE
+	SublimeText + VSCode + Angular + Ionic @ CFTIC
+	NetBeans + BlueFish + Gedit @ Proyectos Independientes
+Mi combo de editores:
+	+ BlueFish: edición de proyectos, plantillas.
+	+ Gedit: edición rápida.
+	+ NetBeans: creación de estructura de proyectos, minificación, depuración.
+https://www.w3schools.com/tags/att_time_datetime.asp
+Dibuja un arco iris con CSS.
+Hagámoslo bien, desde el principio.
+onload="" no me ha funcionado bien dentro de un span, pero sí en el body. ¿orden de lectura del código?
+https://www.google.com/webdesigner/
+Permisos de carpetas WordPress para que no pida claves FTP
+	0644 para los niveles superiores(de mucha importancia), esto es la raíz del sitio y todos los ficheros que estén ahí situados.
+	0755 para estas carpetas: wp-admin, wp-content, wp-includes.
+	0755 para las carpetas uploads y plugins (En algunos casos 775, depende de configuración del servidor)
+	0666 para tu tema de WordPress en caso de que quieras que sea editable desde el escritorio.
+Crear archivo "departamentoq.js".
+https://www.w3.org/html/logo/#downloads
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onclick
+Perfil en github o similar para mostrar al mundo mis proyectos

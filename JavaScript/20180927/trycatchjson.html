@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Quiviro Enquerre">
+		<meta name="description" content="Tratamiento de errores y excepciones con TRY y CATCH">
+		<meta name="keywords" content="JavaScript, try, catch, excepciones">
+		<title>Try+Catch, JSON</title>
+		<link rel="stylesheet" type="text/css" href="trycatchjson.css">
+		<script type="text/javascript" src="trycatchjson.js"></script>
+	</head>
+	<body>
+		<h1>Tratamiento de excepciones con TRY + CATCH</h1>
+		<!-- por motivos de aprendizaje, no establezco el tipo "number" -->
+		<input type="text" name="numero1" id="numero1">
+		<input type="text" name="numero2" id="numero2">
+		<button id="botonSuma">Suma</button>
+		<p id="resultado"></p>
+		<code>
+			try<br>
+			{<br>
+				var n1 = parseInt(document.getElementById("numero1").value);<br>
+				var n2 = parseInt(document.getElementById("numero2").value);<br>
+				if(isNaN(n1) || isNaN(n2))<br>
+				{<br>
+					throw "Por favor, \<br>
+					introduzca dos números numéricos"<br>
+				}<br>
+				var resultado = n1 + n2;<br>
+				document.getElementById("resultado").innerHTML = n1 + " + " + n2 +
+					" = " + resultado;<br>
+			}<br>
+			catch(error)<br>
+			{<br>
+				document.getElementById("resultado").innerHTML = error;<br>
+			}		
+		</code>
+		<br>
+		<h2>JSON</h2>
+		<h4>Objeto mostrado en crudo</h4>
+		<p id="mostrarObjeto"></p>
+		<code>
+			var nombre = [];
+			var apellido = [];
+			var ciudad = [];
+			var personas = [];<br>
+
+			nombre[0] = "Paco";
+			nombre[1] = "Juan";
+			nombre[2] = "María";<br>
+
+			apellido[0] = "Jiménez";
+			apellido[1] = "García";
+			apellido[2] = "López";<br>
+
+			ciudad[0] = "Madrid";
+			ciudad[1] = "Toledo";
+			ciudad[2] = "Guadalajara";<br>
+
+			for(let i = 0; i < nombre.length; i++)
+			{<br>
+				personas.push({
+					"Nombre": nombre[i],
+					"Apellido": apellido[i],
+					"Ciudad": ciudad[i]
+				});<br>
+			}<br>
+			document.getElementById("mostrarObjeto").innerHTML = JSON.stringify(personas);
+		</code>
+		<br>
+		<h4>Objeto formateado con información previa (personas)</h4>
+		<p id="mostrarJson"></p>
+		<code>
+			var objeto = {};<br>
+			objeto.personas = personas;<br>
+			document.getElementById("mostrarJson").innerHTML = JSON.stringify(objeto);
+		</code>
+		<br>
+		<table id="tablaPersonas"></table>
+
+		<br>
+	</body>
+</html>

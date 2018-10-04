@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Quiviro Enquerre">
+      <meta name="description" content="Prácticas con operaciones y operandos">
+      <meta name="keywords" content="JavaScript">
+      <title>Operaciones con JavaScript</title>
+   </head>
+   <body>
+      <h1>Prácticas con hoja de JavaScript en una hoja aparte (<strong>02-OperacionesJS.js</strong>)</h1>
+      <hr>
+      <h4>De litros a centilitros</h4>
+      <p>
+        <span id="centilitros">
+         <!-- <script type="text/javascript">
+          var litros = 350;
+          var centilitros = litros * 100;
+          document.getElementById("centilitros").innerHTML= "¿Cuánto es " + litros + " litros en centilitros? " + centilitros + " centilitros.";
+         </script> -->
+        </span>
+      </p>
+      <h4>De kilómetros a metros</h4>
+      <p> 
+        <span id="kilometros">
+          <!-- <script type="text/javascript">
+            var km = 5.3;
+            document.getElementById("kilometros").innerHTML= "¿Cuántos metros son " + km + " kilómetros?";
+          </script> -->
+        </span>
+        <span id="metros">
+          <!-- <script type="text/javascript">
+            var metros = km * 1000;
+            document.getElementById("metros").innerHTML= metros + " metros.";
+          </script> -->
+        </span>
+      </p>
+      <h4>De días a minutos</h4>
+      <p> 
+        <span id="minutos">
+          <!-- <script type="text/javascript">
+            var horas = 24;
+            var minutos = horas * 60;
+            document.getElementById("minutos").innerHTML= "¿Cuántos minutos tienen " + horas +" horas? " + minutos + " minutos.";
+          </script> -->
+        </span>
+      </p>
+      <h4>De megabytes a gigabytes</h4>
+      <p> 
+        <span id="gygabytes">
+          <!-- <script type="text/javascript">
+            var megabytes = 4096;
+            var gygabytes = megabytes / 1024;
+            document.getElementById("gygabytes").innerHTML= "¿Cuántos son " + megabytes + " megabytes en gigabytes? " + gygabytes + " gygabytes.";
+          </script> -->
+        </span>
+      </p>
+      <h4>De pulgadas a centímetros</h4>
+      <p> 
+        <span id="centimetros">
+          <!-- <script type="text/javascript">
+            var pulgadas = 56;
+            var centimetros = pulgadas * 2.54;
+            document.getElementById("centimetros").innerHTML= "¿Cuántos centímetros son " + pulgadas + " pulgadas? " + centimetros + " centímetros.";
+          </script> -->
+        </span>
+      </p>
+      <h4>De días a segundos</h4>
+      <p> 
+        <span id="diaHoras">
+          <!-- <script type="text/javascript">
+            var dia = 1;
+            var diaHoras = dia * 24;
+            document.getElementById("diaHoras").innerHTML= dia + " día tiene " + diaHoras + " horas, ";
+          </script> -->
+        </span>
+        <span id="diaMinutos">
+          <!-- <script type="text/javascript">
+            var diaMinutos = diaHoras * 60;
+            document.getElementById("diaMinutos").innerHTML= diaMinutos + " minutos y ";
+          </script> -->
+        </span>
+        <span id="diaSegundos">
+          <!-- <script type="text/javascript">
+            var diaSegundos = diaMinutos * 60;
+            document.getElementById("diaSegundos").innerHTML= diaSegundos + " segundos.";
+          </script> -->
+        </span>
+      </p>
+      <h4>De valor a precio</h4>
+      <p>
+        <span id="valor">
+          <!-- <script type="text/javascript">
+            var valor = 50;
+            document.getElementById("valor").innerHTML= "Calcula el precio final de un producto con valor " + valor + " €";
+          </script> -->
+        </span>
+         <span id="descuento">
+          <!-- <script type="text/javascript">
+            var descuento = 20;
+            document.getElementById("descuento").innerHTML= " - " + descuento + " % ";
+          </script> -->
+        </span>
+        <span id="iva">
+          <!-- <script type="text/javascript">
+            var iva = 21;
+            document.getElementById("iva").innerHTML= "+ IVA (" + iva + "% ) ";
+          </script> -->
+        </span>
+        <span id="precioFinal">
+          <!-- <script type="text/javascript">
+            var precioFinal = (valor (1 - descuento/100)) * (1 + iva/100);
+            document.getElementById("precioFinal").innerHTML= "= " + precioFinal + " €";
+          </script> -->
+        </span>
+       </p>
+       <h4>De años...</h4>
+       <p>  
+        <span id="anyo">
+          <!-- <script type="text/javascript">
+            var anyo = 2018;
+            document.getElementById("anyo").innerHTML= "El año actual es " + anyo + ", ";
+          </script> -->
+        </span>
+         
+        <span id="anyoAnt">
+          <!-- <script type="text/javascript">
+            var anyoAnt = anyo - 1;
+            document.getElementById("anyoAnt").innerHTML="el año anterior fue " + anyoAnt;
+          </script> -->
+        </span>
+         
+        <span id="anyoSig">
+          <!-- <script type="text/javascript">
+            var anyoSig = anyo + 1;
+            document.getElementById("anyoSig").innerHTML=" y el año siguiente será " + anyoSig + ".";
+          </script> -->
+        </span>
+      </p>
+      <h4>Años, días, semanas, trimestres</h4>
+      <p> 
+        <span id="anyoComp">
+          <!-- <script type="text/javascript">
+            var anyoComp = 1;
+            document.getElementById("anyoComp").innerHTML= anyoComp + " año completo tiene ";
+          </script> -->
+        </span>
+        <span id="anyoDias">
+          <!-- <script type="text/javascript">
+            var anyoDias = anyoComp * 365;
+            document.getElementById("anyoDias").innerHTML= anyoDias + " días, ";
+          </script> -->
+        </span>
+        <span id="anyoSemanas">
+          <!-- <script type="text/javascript">
+            var anyoSemanas = parseInt(anyoDias/7);
+            document.getElementById("anyoSemanas").innerHTML= anyoSemanas + " semanas y ";
+          </script> -->
+        </span>
+        <span id="anyoTrimestres">
+          <!-- <script type="text/javascript">
+            var anyoTrimestres = anyoComp * 4;
+            document.getElementById("anyoTrimestres").innerHTML= anyoTrimestres + " trimestres.";
+          </script> -->
+        </span>
+      </p>
+      <h4>Si un coche sale de Zaragoza...</h4>
+      <p> 
+        <span id="cocheVel">
+          <!-- <script type="text/javascript">
+            var cocheVel = 120;
+            document.getElementById("cocheVel").innerHTML= "Si un coche circula a " + cocheVel + " km/h, ";
+          </script> -->
+        </span>
+        <span id="cocheKm">
+          <!-- <script type="text/javascript">
+            var cocheKm = 375;
+            document.getElementById("cocheKm").innerHTML= "¿cuántos minutos tarda en recorrer " + cocheKm + " km?";
+          </script> -->
+        </span>
+        <span id="cocheTiempo">
+          <!-- <script type="text/javascript">
+            var cocheHoras = cocheKm / cocheVel;
+            var cocheMinutos = cocheHoras * 60;
+            document.getElementById("cocheTiempo").innerHTML= cocheMinutos + " minutos (" + cocheHoras + " horas).";
+          </script> -->
+        </span>
+      </p>
+      <hr>
+      <h3>EXTRA</h3>
+      <p>¿Cuánto es <input type="number" name="numeroLitros" id="numeroLitros" title="Debe introducir un número positivo"> litros en centilitros? 
+        <span id="centilitros2">
+          <button onclick="centilitros2()">Respuesta</button>
+<!--           <script type="text/javascript">
+            document.getElementById("centilitros2").innerHTML = centilitros2(350)
+          </script> -->
+        </span>
+         centilitros.
+      </p>
+      <script type="text/javascript" src="../js/02-OperacionesJS.js"></script>
+   </body>
+</html>

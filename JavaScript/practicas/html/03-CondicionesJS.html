@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Quiviro Enquerre">
+      <meta name="description" content="Prácticas con condicionales">
+      <meta name="keywords" content="JavaScript">
+      <title>Operaciones con JavaScript</title>
+   </head>
+   <body>
+      <h1>Prácticas con hoja de JavaScript en una hoja aparte (<strong>03-CondicionesJS.js</strong>)</h1>
+      <hr>
+      <h4>Tabla de multiplicar introduciendo un número</h4>
+      <p title="Debe introducir un número del 1 al 10">
+        <input type="number" name="numeroTabla" id="numeroTabla" min="1" max="10"> 
+        <button onclick="multiplicar()">Tabla de multiplicar</button>
+      </p>
+      <p id="mostrarTabla"></p>
+      <br>      
+      <h4>Comprobar si el número introducido es par o impar</h4>
+      <p title="Debe introducir un número distinto de 0">
+        <input type="number" name="numeroParImpar" id="numeroParImpar" > 
+        <button onclick="parImpar()">¡Hagan juego!</button>
+      </p>
+      <p id="mostrarParImpar"></p>
+      <br>      
+      <h4>Comprobar si el número introducido es primo</h4>
+      <p title="Debe introducir un número distinto de 0">
+        <input type="number" name="numeroPrimo" id="numeroPrimo" > 
+        <button onclick="primo()">¿Eres un primo?</button>
+      </p>
+      <p id="mostrarPrimo"></p>
+      <br>
+      <h4>Comprobar, según la edad introducida, a qué categoría deportiva pertenece</h4>
+      <p title="Debe introducir un número entre 5 y 18 años">
+        <input type="number" name="edad" id="edad" min="5" max="18" > 
+        <button onclick="calcularEdad()">Categoría</button>
+      </p>
+      <p id="mostrarEdad"></p>
+      <br>      
+      <h4>Comprobar a qué trimestre pertenece un mes introducido</h4>
+      <p title="Debe introducir un número entre 1 y 12">
+        <input type="number" name="mes" id="mes" min="1" max="12" > 
+        <button onclick="trimestre()">Trimestre</button>
+      </p>
+      <p id="mostrarTrimestre"></p>
+      <br>
+      <h4>Introducir una fecha y comprobar el signo del zodiaco</h4>
+      <p title="Debe introducir su fecha de nacimiento con el formato AAAA-MM-DD">
+        <input type="date" name="fecha" id="fecha" placeholder="AAAA-MM-DD" > 
+        <button onclick="zodiaco()">¡Está lleno de estrellas!</button>
+      </p>
+      <p id="mostrarZodiaco"></p>
+      <br>
+      <h4>Introducir un código postal y mostrar a qué región pertenece</h4>
+      <p title="Debe introducir las cinco cifras de su código postal en España">
+        <input type="number" name="codigo" id="codigo" min="01001" max="52999" > 
+        <button onclick="codigoPostal()">Encontrar</button>
+      </p>
+      <p id="mostrarCodigoPostal"></p>
+      <br>
+      <h4>Introducir un número del 1 al 7 y que muestre el nombre del día de la semana</h4>
+      <p title="Debe introducir un número del 1 al 7">
+        <input type="number" name="diaSemana" id="diaSemana" min="1" max="7" > 
+        <button onclick="diaSemana()">Encontrar</button>
+      </p>
+      <p id="mostrarDiaSemana"></p>
+      <br>
+      <h4>Introducir el DNI y la letra y comprobar si la letra es correcta</h4>
+      <p title="Debe introducir el número completo de su documento identificativo">
+        <label><input type="radio" name="identificacion" value="dni" id="dni" onchange="tipoIdentificacion()"> DNI</label>
+        <label><input type="radio" name="identificacion" value="nie" id="nie" onchange="tipoIdentificacion()"> NIE</label>
+        
+        <div id="botonesDni" style="display: none;">
+          <input type="number" name="numeroDni" id="numeroDni" min="1" maxlength="8" size="8" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" > 
+          <input type="text" name="letraDni" id="letraDni" maxlength="1" size="1">
+          <button onclick="validarDni()">Validar</button>
+        </div>
+        <div id="botonesNie" style="display: none;">Game Over</div>
+      </p>
+      <p id="mostrarValidacion"></p>
+      <br>
+      <h4>Introducir una hora y comprobar si es por la mañana (6-12), por la tarde (12-18), por la noche (18-0), o de madrugada(0-6)</h4>
+      <p title="Debe introducir un número del 1 al 24">
+        <input type="number" name="horaDia" id="horaDia" min="0" max="23" > 
+        <button onclick="horaDelDia()">A la hora señalada</button>
+      </p>
+      <p id="mostrarHoraDelDia"></p>
+      <br>
+      <script type="text/javascript" src="../js/03-CondicionesJS.js"></script>
+   </body>
+</html>
+
+<!-- 
+
+ -->

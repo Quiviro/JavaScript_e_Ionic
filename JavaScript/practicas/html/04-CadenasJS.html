@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Quiviro Enquerre">
+<meta name="description" content="Prácticas con métodos aplicados a cadenas en JavaScript">
+<meta name="keywords" content="JavaScript,métodos,cadenas">
+<title>Cadenas de JavaScript</title>
+
+<style type="text/css">
+ 
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+td {
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+<h1>Cadenas en JavaScript</h1>
+<hr>
+<h2>Prácticas con hoja de JavaScript en una hoja aparte</h2>
+<h4>Crear un objeto para rellenenar los campos de la tabla.</h4>
+<table>
+  <tr>
+    <td><strong>Nombre</strong></td>
+    <td><strong>Apellidos</strong></td>
+    <td><strong>Teléfono</strong></td>
+    <td><strong>Email</strong></td>
+    <td><strong>AñoNacimiento</strong></td>
+    <td><strong>Edad</strong></td>
+  </tr>
+  <tr>
+    <td><p id="demo0"></p></td>
+    <td width="80" align="center"><p id="demo19"></p></td>
+    <td width="80" align="center"><p id="demo20"></p></td>
+    <td width="63" align="center"><p id="demo21"></p></td>
+    <td width="120" align="center"><p id="demo22"></p></td>
+    <td width="80" align="center"><p id="demo23"></p></td>
+  </tr>
+</table>
+
+<h4>Crear funciones que modifiquen una frase introducida: <br>
+mostrar frase con comillas, en mayúsculas, en minúsculas y que le añada &quot;Cita:&quot; al comienzo de la frase.</h4>
+	<input type="text" id="frase" value="" placeholder="introduce una frase">
+	<input type="button" onclick="iniciar()" value="Iniciar">
+	<input type="button" onclick="remplazar()" value="Reemplazar">
+	<input type="button" onclick="mayusculas()" value="Mayúsculas">
+	<input type="button" onclick="minusculas()" value="Minúsculas">
+	<input type="button" onclick="concatenar()" value="Concatenar">
+  <p id="mostrarFrase"></p>
+
+<h4>Crea una función que muestre sólo la primera palabra  y sólo la última palabra de una frase introducida.</h4>
+  <input type="text" id="frasePalabra" value="" placeholder="introduce una frase">
+  <input type="button" onclick="mostrarPrimeraPalabra()" value="Primera palabra">
+  <input type="button" onclick="mostrarUltimaPalabra()" value="Última palabra">
+  <div id="resultadoPalabra"></div> 
+
+<h4>Crear función que muestre el número de caracteres que tiene una frase introducida.</h4>
+  <input type="text" id="contarCaracteres" value="" placeholder="introduce una frase">
+  <input type="button" onclick="contarCaracteres()" value="Longitud">
+  <div id="resultadoContarCaracteres"></div>  
+
+<h4>Crear función que sustituya los espacios en blanco por guiones de una frase introducida.</h4>
+  <input type="text" id="contarvocales6" value="" placeholder="introduce una frase">
+  <input type="button" onclick="sustituirEspacios()" value="Sustituir">
+  <div id="resultadoSustituirEspacios"></div>  
+
+<h4>Crear una función que muestre un texto introducido al revés.</h4>
+  <input type="text" id="contarvocales7" value="" placeholder="introduce una frase">
+  <input type="button" onclick="mostrarAlReves()" value="Mostrar al revés">
+  <div id="resultadoMostrarAlReves"></div>  
+
+<h4>Crear una función que muestre un número introducido:<br>
+en un número entero, con 1 decimal, con 2 decimales y con el símbolo del Euro.</h4>
+  <input type="number" id="contarvocales8" value="" placeholder="introduce un número">
+  <input type="button" onclick="convertirEntero()" value="Convertir en entero">
+  <input type="button" onclick="convertirUnDecimal()" value="Un decimal">
+  <input type="button" onclick="convertirDosDecimal()" value="Dos decimal">
+  <input type="button" onclick="convertirEuro()" value="€uro">
+  <div id="resultadoConvertirNumero"></div>  
+
+<h4>Crear una función que  cuente el número de vocales  que tiene un texto.</h4>
+  <input type="text" id="contarvocales" value="" placeholder="introduce una frase">
+  <input type="button" onclick="contarVocales()" value="Contar vocales">
+  <div id="resultadoContarVocales"></div>  
+
+<h4>Crear una función que  cuente el número de consonantes que tiene un texto.</h4>
+  <input type="text" id="contarConsonantes" value="" placeholder="introduce una frase">
+  <input type="button" onclick="contarConsonantes()" value="Contar consonantes">
+  <div id="resultadoContarConsonantes"></div>  
+
+<h4>Crear una función que  cuente el número de veces que aparece cada letra.</h4>
+  <input type="text" id="contarvocales5" value="" placeholder="introduce una frase">
+  <input type="button" onclick="contarVeces()" value="Contar veces">
+  <div id="resultadoContarVeces"></div>  
+
+<script src="../js/04-CadenasJS.js" type="text/javascript"></script>
+
+</body>
+</html>

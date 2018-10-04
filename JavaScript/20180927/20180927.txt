@@ -1,0 +1,14 @@
+Callback: llamada ¿asíncrona? entre funciones.
+Utilizar el inspector, sólo el inspector, para desarrollo web: HTML, CSS, JavaScript.
+
+Las funciones de rellamada antes que las funciones-originales.
+No funciona llamar a funciones entre archivos .js si espero a que se cargue todo el código HTML.
+
+TRY...
+CATCH...
+Se puede utilizar para llamar a la página 404 cuando no hay contenido.
+
+
+JSON
+En esencia, son arrays (matrices) dentro de un objeto.
+json viewer online: jsonviewer.stack.hu

@@ -1,0 +1,29 @@
+nodejs.org
+angular.io
+firebase.google.com
+
+Después de instalar nodeJS, en la terminal:
+	npm install -g @angular/cli
+	node -v; npm -v; ng -v (para comprobar que está bien instalado)
+	ng new proyecto (puedo elegir la ruta navegando por las carpetas con el comando 'cd')
+	ng serve (arranco el servidor; tengo que estar dentro de la carpeta del proyecto)
+		ng serve --port xxx (abrir servidor en el puerto xxx, por defecto es el 4200)
+		Ctrl + C = parar servidor
+	ng g(enerate) c(omponent) micomponente (ojo con la ruta)
+
+En "src" están index.html y style.css
+En "assets" se guardarían los archivos que voy a usar en el proyecto (img, fonts...)
+
+index.html solo se modifica en la cabecera, el cuerpo no se toca.
+
+La ruta desde la que se importa un componente en "app.module.ts" llama al archivo .ts, aunque no se escribe la extensión.
+
+Etiqueta HTML <base>: especifica una ruta por defecto para los enlaces de las img de la página.
+
+Nombres de carpetas sin espacios para no tener problemas con la terminal.
+
+VSCode @ Altare.
+SublimeText + VSCode + Angular6 @ CFTIC.
+Notepad++ @ EstudioRedBox.
+NetBeans + BlueFish + Gedit @ casa.
+Atom @ TEIDE.

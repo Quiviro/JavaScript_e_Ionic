@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Página Maestra</title>
+	<style type="text/css">
+		body
+		{
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c5f29b+0,2ef2ad+27,8fcff7+52,c9d6ea+76,dbbed6+100 */
+			background: #c5f29b; /* Old browsers */
+			background: -moz-linear-gradient(-45deg, #c5f29b 0%, #2ef2ad 27%, #8fcff7 52%, #c9d6ea 76%, #dbbed6 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(-45deg, #c5f29b 0%,#2ef2ad 27%,#8fcff7 52%,#c9d6ea 76%,#dbbed6 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(135deg, #c5f29b 0%,#2ef2ad 27%,#8fcff7 52%,#c9d6ea 76%,#dbbed6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5f29b', endColorstr='#dbbed6',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+		}
+		hr
+		{
+			max-width: 80%;
+    }
+    pre
+    {
+    	font-size: 19px;
+    }
+    img
+    {
+    	max-width: 100%;
+    	height: auto;
+    }
+    /* estilos para los enlaces copiados de W3schools */
+    main a:link {
+		    color: green; 
+		}
+		main a:visited {
+		    color: hotpink;
+		}
+		main a:hover {
+		    color: red;
+		}
+		main a:active {
+		    color: yellow;
+		}
+    nav
+    {
+    	position: fixed;
+    	top: 0;
+    	left: 0;
+    	width: 100%;
+    	background-color: yellow;
+    	background-image: url('https://cdn.jaleco.com/gen/tema-bob-esponja-light-100x100.png');
+    	background-size: contain;
+    	padding-left: 4px;
+    	padding-right: 4px;
+    	z-index: 9;
+    }
+    nav p a
+    {
+    	padding: 8px;
+    	background-color: grey;
+    	border: 2px solid white;
+    	border-radius: 8px;
+    	color: white;
+    	text-decoration: none;
+    }
+    nav p a:hover
+    {
+    	background-color: black;
+    }
+    .ancla
+    {
+    	margin-bottom: 66px;
+    }
+    .centrar
+    {
+    	text-align: center;
+    }
+    /* tabla con estilo */
+    table {
+		    width:100%;
+		}
+		table, th, td {
+		    border: 1px solid black;
+		    border-collapse: collapse;
+		}
+		th, td {
+		    padding: 15px;
+		    text-align: left;
+		}
+		table#t01 tr:nth-child(even) {
+		    background-color: #eee;
+		}
+		table#t01 tr:nth-child(odd) {
+		   background-color: #fff;
+		}
+		table#t01 th {
+		    background-color: black;
+		    color: white;
+		}
+		table#t01 tfoot td
+		{
+			background-color: black;
+			color: lime;
+		}
+		table#t01 tr:hover
+		{
+			background-color: darkgrey;
+		}
+		table#t01 td:hover
+		{
+			text-shadow: 0 0 1px red;
+		}
+		table#t01 caption
+		{
+			caption-side: bottom;
+			padding-top: 6px;
+		}
+		table#t01 thead
+		{
+			background-color: #222;
+			color: #ddd;
+		}
+		table#t01 thead th
+		{
+			text-align: center;
+		}
+		table#t02
+		{
+			max-width: 80%;
+			margin: auto;
+		}
+		table#t02, table#t02 td, table#t02 th
+		{
+			border: 0;
+		}
+	</style>
+</head>
+<body style="padding: 20px; ">
+	<nav>
+		<!-- De inicio mostraré solo los botones del mes -->
+		<p id="septiembre">
+			<button>Septiembre</button>
+			<a href="#dia1" title="Etiquetas HTML">11</a>
+			<a href="#dia2" title="Etiquetas HTML">12</a>
+			<a href="#dia3" title="Etiquetas HTML">13</a>
+			<a href="#dia4" title="Prototipo móvil">14</a>
+		</p>
+	</nav>
+	<main>
+	<hr id="dia1" class="ancla">
+	<h1>Título 1</h1>
+	<h2>Título 2</h2>
+	<h3>Título 3</h3>
+	<h4>Título 4</h4>
+	<h5>Título 5</h5>
+	<h6>Título 6</h6>
+	<hr>
+	<p>
+		Esto es un parrafo
+		que contiene un montón de líneas
+		en el código fuente,
+		pero el navegador
+		las ignora.
+	</p>
+	<p>
+		Este párrafo
+		contiene         un montón de espacios
+		en el código         fuente,
+		pero el        navegador 
+		los ignora.
+	</p>
+	<p>Esto es<br>un párrafo<br>con saltos de línea.</p>
+	<pre>
+	  My Bonnie lies over the ocean.
+
+	  My Bonnie lies over the sea.
+
+	  My Bonnie lies over the ocean.
+
+	  Oh, bring back my Bonnie to me.
+	</pre>
+	<hr>
+	<p><b>This text is bold.</b></p>
+	<p><strong>This text is strong.</strong></p>
+	<p><i>This text is italic.</i></p>
+	<p><em>This text is emphasized</em></p>
+	<h2>HTML <small>Small</small> Formatting</h2>
+	<h2>HTML <mark>Marked</mark> Formatting</h2>
+	<p>My favorite color is <del>blue</del> red.</p>
+	<p>My favorite <ins>color</ins> is red.</p>
+	<p>This is <sub>subscripted</sub> text.</p>
+	<p>This is <sup>superscripted</sup> text.</p>
+	<hr>
+	<br>
+	<p>Browsers usually insert quotation marks around the q element.</p>
+	<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+	<br>
+	<p>Here is a quote from WWF's website:</p>
+	<blockquote cite="http://www.worldwildlife.org/who/index.html">
+	For 50 years, WWF has been protecting the future of nature.
+	The world's leading conservation organization,
+	WWF works in 100 countries and is supported by
+	1.2 million members in the United States and
+	close to 5 million globally.
+	</blockquote>
+	<br>
+	<p>The HTML address element defines contact information (author/owner) of a document or article.</p>
+	<address>
+	Written by John Doe.<br> 
+	Visit us at:<br>
+	Example.com<br>
+	Box 564, Disneyland<br>
+	USA
+	</address>
+	<br>
+	<p>The HTML cite element defines the title of a work. Browsers usually display cite elements in italic.</p>
+	<img src="https://www.w3schools.com/html/img_the_scream.jpg"  alt="The Scream">
+	<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+	<br>
+	<p>If your browser supports bi-directional override (bdo), the next line will be written from right to left (rtl):</p>
+	<p><bdo dir="rtl">This line will be written from right to left</bdo></p>
+	<p><bdo dir="ltr">This line will be written from left to right</bdo></p>
+	<br>
+	<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+	<p>Marking up abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+	<br>
+	<hr id="dia2" class="ancla">
+	<!-- Quiero comentar algo -->
+	<p class="centrar" style="background-color: dodgerblue; color: ghostwhite; padding: .4em .8em; border: 2px solid tomato; margin: auto 4%; ">Voy a poner un poco de color por <span style="background-color: rgba(255, 99, 71, .8);">aquí</span></p>
+	<hr>
+	<h3 class="centrar" >Una imagen adaptable a la pantalla</h3>
+	<img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl in a jacket" style="display: block; margin: 8px auto;">
+	<img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Italian Trulli" style="display: block; margin: 8px auto;" >
+	<img src="https://www.w3schools.com/html/img_chania.jpg" alt="Flowers in Chania" style="width: 50%;display: block; margin: 8px auto;" >
+	<br>
+	<p class="centrar">La foto cambia según el ancho de pantalla</p>
+	<picture class="centrar" style="display: block;">
+		<source srcset="https://www.w3schools.com/html/img_girl.jpg" media="(min-width: 960px)">
+		<source srcset="https://www.w3schools.com/html/pic_trulli.jpg" media="(min-width: 480px)">
+		<img src="https://www.w3schools.com/html/img_chania.jpg" alt="La foto cambia según el ancho de pantalla" >
+		<p>Pie de foto</p>
+	</picture>
+	<br>
+	<hr id="dia3" class="ancla">
+	<h3>Una tabla con estilo</h3>
+	<table id="t01">
+		<caption>Esta es la leyenda de la tabla<br><small>(colocada debajo)</small></caption>
+		<!-- los estilos del colgroup parece que solo pueden cambiar el color de fondo  -->
+		<!-- aquí ni eso por culpa de los estilos aplicados a toda la tabla #t01 -->
+	  <colgroup>
+	    <col span="2" style="background-color:red !important">
+	    <col style="background-color:yellow">
+	  </colgroup>
+		<thead>
+				  <tr>
+	    <th colspan="3">Nombre, apellidos y edad</th>
+
+	  </tr>
+		</thead>
+		<tfoot>
+				  <tr>
+	    <td>Quiviro</td>
+	    <td>Enquerre</td>
+	    <td>48</td>
+	  </tr>
+		</tfoot>
+		<tbody>
+							  <tr>
+	    <th>Firstname</th>
+	    <th>Lastname</th> 
+	    <th>Age</th>
+	  </tr>
+				  <tr>
+	    <td>Jill</td>
+	    <td>Smith</td>
+	    <td>50</td>
+	  </tr>
+	  <tr>
+	    <td>Eve</td>
+	    <td>Jackson</td>
+	    <td>94</td>
+	  </tr>
+	  <tr>
+	    <td>John</td>
+	    <td>Doe</td>
+	    <td>80</td>
+	  </tr>
+	  	  <tr>
+	    <td>Eve</td>
+	    <td>Jackson</td>
+	    <td>94</td>
+	  </tr>
+	  <tr>
+	    <td>John</td>
+	    <td>Doe</td>
+	    <td>80</td>
+	  </tr>
+		</tbody>
+
+	</table>
+	<br>
+	<hr>
+	<table id="t02">
+		<thead>
+			<tr>
+				<th>Lista sin orden</th>
+				<th>Lista ordenada</th>
+				<th>Lista de definiciones</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<ul style="list-style-type: none">
+						<li>Hola</li>
+						<li>Caracola</li>
+						<li>Se te va la ola</li>
+					</ul>
+				</td>
+				<td>
+					<ol type="i">
+						<li>One</li>
+						<li>Two</li>
+						<li>Three</li>
+					</ol>
+				</td>
+				<td>
+					<dl>
+						<dt>One</dt>
+						<dd>1</dd>
+						<dt>Dos</dt>
+						<dd>2</dd>
+						<dt>Trois</dt>
+						<dd>3</dd>
+					</dl>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<hr>
+	<h3>Etiquetas HTML de agrupación</h3>
+	<div style="width: 90%; margin: 0 auto; background-color: aquamarine;display: -webkit-flex; display: flex;justify-content: space-between;">
+		<style type="text/css">
+			.ciudad
+			{
+				background-color: grey;padding: 10px;color: lime;border:dashed;width: 25%; -webkit-flex: 1; -ms-flex: 1; flex: 1;
+			}
+		</style>
+		<div class="ciudad">
+		<h4>Londres</h4>
+		<p>Esto es un párrafo dentro de una etiqueta &lt;div&gt; (etiqueta de bloque) y además con una etiqueta <span style="border: 2px solid blue;padding: 3px;color: yellow;">&lt;span&gt;</span> (etiqueta de línea).</p>
+		</div>
+		<div style="margin: 0 2%;" class="ciudad">
+			<h4>París</h4>
+			<p>Esto es otro párrafo dentro de una etiqueta &lt;div&gt; (etiqueta de bloque) y además con una etiqueta <span style="border: 2px solid blue;padding: 3px;color: yellow;">&lt;span&gt;</span> (etiqueta de línea).</p>
+		</div>
+		<div class="ciudad">
+			<h4>Tokio</h4>
+			<p>Esto es otro párrafo más dentro de una etiqueta &lt;div&gt; (etiqueta de bloque) y además con una etiqueta <span style="border: 2px solid blue;padding: 3px;color: yellow;">&lt;span&gt;</span> (etiqueta de línea).</p>
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+	<br>
+	<hr id="dia4" class="ancla">
+	<style>
+		/* The device with borders */
+		.smartphone {
+		  position: relative;
+		  width: 360px;
+		  height: 640px;
+		  margin: auto;
+		  border: 16px black solid;
+		  border-top-width: 60px;
+		  border-bottom-width: 60px;
+		  border-radius: 36px;
+		}
+
+		/* The horizontal line on the top of the device */
+		.smartphone:before {
+		  content: '';
+		  display: block;
+		  width: 60px;
+		  height: 5px;
+		  position: absolute;
+		  top: -30px;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  background: #333;
+		  border-radius: 10px;
+		}
+
+		/* The circle on the bottom of the device */
+		.smartphone:after {
+		  content: '';
+		  display: block;
+		  width: 35px;
+		  height: 35px;
+		  position: absolute;
+		  left: 50%;
+		  bottom: -65px;
+		  transform: translate(-50%, -50%);
+		  background: #333;
+		  border-radius: 50%;
+		}
+
+		/* The screen (or content) of the device */
+		.smartphone .content {
+		  width: 360px;
+		  height: 640px;
+		  background: white;
+		  position: relative;
+		}
+	</style>
+	<h4 style="text-align: center;">Prototipo de aplicación</h4>
+	<div class="smartphone">
+	  <div class="content">
+	    <iframe src="http://www.tortugasycarac.hol.es/ej_bootstrap/19.html" style="width:100%;border:none;height:100%" ></iframe>
+		</div>
+	</div>
+
+	<style>
+		/* The device with borders */
+		.tablet {
+		  position: relative;
+		  width: 768px;
+		  height: 1024px;
+		  margin: auto;
+		  border: 16px black solid;
+		  border-top-width: 60px;
+		  border-bottom-width: 60px;
+		  border-radius: 36px;
+		}
+
+		/* The horizontal line on the top of the device */
+		.tablet:before {
+		  content: '';
+		  display: block;
+		  width: 60px;
+		  height: 5px;
+		  position: absolute;
+		  top: -30px;
+		  left: 50%;
+		  transform: translate(-50%, -50%);
+		  background: #333;
+		  border-radius: 10px;
+		}
+
+		/* The circle on the bottom of the device */
+		.tablet:after {
+		  content: '';
+		  display: block;
+		  width: 35px;
+		  height: 35px;
+		  position: absolute;
+		  left: 50%;
+		  bottom: -65px;
+		  transform: translate(-50%, -50%);
+		  background: #333;
+		  border-radius: 50%;
+		}
+
+		/* The screen (or content) of the device */
+		.tablet .content {
+		  width: 768px;
+		  height: 1024px;
+		  background: white;
+		  margin: -1px;
+		}
+		</style>
+		<br>
+		<hr>
+		<br>
+		<div class="tablet">
+		  <div class="content">
+		    <iframe src="http://www.tortugasycarac.hol.es/ej_bootstrap/19.html" style="width:100%;border:none;height:100%" ></iframe>
+		  </div>
+		</div>
+		<br>
+		<hr>
+		<br>
+		<div class="smartphone" style="width: 320px; height: 480px">
+	  	<div class="content" style="width: 100%; height: 100%">
+		    <div style="width: 100%; height: 100%; margin: auto; background-color: white; overflow-y: auto;position: relative;">
+					<header>
+						<button style="float: left;">Izquierda</button>
+						<button style="float: right;">Derecha</button>
+						<div style="clear: both;"></div>
+					</header>
+					<main>
+						Contenido
+					</main>
+					<footer style="position: absolute; bottom: 0;width: 100%;">
+						Pie
+					</footer>
+			  </div>
+			</div>
+		</div>
+
+
+
+	
+	</main>
+
+	<footer>
+		<p class="centrar"><a href="#">Arriba</a></p>
+	</footer>
+</body>
+</html>

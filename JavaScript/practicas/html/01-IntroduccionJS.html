@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Quiviro Enquerre">
+      <meta name="description" content="JavaScript avanzado e Ionic">
+      <meta name="keywords" content="HTML,CSS,JavaScript,Ionic">
+      <title>Introducción a JavaScript</title>
+   </head>
+   <body>
+      <h1>¿Qué puede hacer JavaScript</h1>
+      <hr>
+      <h2>JavaScript puede cambiar el contenido HTML</h2>
+      <p>Uno de los muchos métodos JavaScript HTML es <strong>getElementById()</strong>.</p>
+      <p>En este ejemplo se utiliza el método de "encontrar" un elemento HTML (con id = "demo") y cambia el contenido del elemento (<strong>innerHTML</strong>) para "JavaScript":</p>
+      <p id="esp">JavaScript</p>
+      <button type="button" onclick="document.getElementById('esp').innerHTML = '¡Hola JavaScript!'">Español</button>
+      <p id="ing">JavaScript</p>
+      <button type="button" onclick="document.getElementById('ing').innerHTML = 'Hello JavaScript!'">English</button>
+      <p id="fra">JavaScript</p>
+      <button type="button" onclick="document.getElementById('fra').innerHTML = 'Bonjour JavaScript!'">Français</button>
+      <br>
+      <br>
+      <hr>
+      <h2>JavaScript puede modificar atributos</h2>
+      <p>En este caso JavaScript cambia el valor del atributo <strong>&lt;src&gt;</strong> (source) de una etiqueta <strong>&lt;img&gt;</strong> (imagen).</p>
+      <button onclick="document.getElementById('bombilla').src='../img/pic_bulbon.gif'">Enciende la bombilla</button>
+      <img id="bombilla" src="../img/pic_bulboff.gif" style="width:100px">
+      <button onclick="document.getElementById('bombilla').src='../img/pic_bulboff.gif'">Apaga la bombilla</button>
+      <hr>
+      <h2>JavaScript puede alterar propiedades CSS</h2>
+      <p id="textoColor">Vamos a cambiar el color del texto con JavaScript.</p>
+      <button type="button" onclick="document.getElementById('textoColor').style.color='green'">Verde</button>
+      <button type="button" onclick="document.getElementById('textoColor').style.color='orange'">Naranja</button>
+      <button type="button" onclick="document.getElementById('textoColor').style.color='blue'">Azul</button>
+      <button type="button" onclick="document.getElementById('textoColor').style.color='magenta'">Magenta</button>
+      <button type="button" onclick="document.getElementById('textoColor').style.color='inherit'">Predefinido</button>
+   </body>
+</html>

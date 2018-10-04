@@ -1,0 +1,19 @@
+
+Puede descargarse (jquery.com) o enlazarse (<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>). 
+Para producción, la versión .min
+https://developers.google.com/speed/libraries/
+
+Si usamos jquery, no debemos utilizar otro documento de JavaScript de Vainilla, porque puede haber problemas de compatibilidad.
+Habría que colocar primero la llamada a jquery y después nuestros archivos js.
+
+Averiguar, mediante jquery, si se ha cargado todo el documento HTML:
+	$(document).ready(init);
+	$(document).ready(function(){
+
+	});
+	$(document).on('load', function(){
+		
+	})
+
+Algunas funciones para modificar el contenido de la página sin tocar el código HTML:
+html(), text(), after(), before(), append(), prepend(), remove(), replaceWith()
