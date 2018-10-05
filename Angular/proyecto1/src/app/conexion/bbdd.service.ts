@@ -46,8 +46,10 @@ export class BbddService {
     //sintaxis ECMAscript6
     this.accesoElemento.delete();
   }
-  actualizaUser()
-  {}
+  actualizaUser(actualizaUser)
+  {
+    this.accesoElemento = this.db.doc<Empleado>(`empleados/${this.actualizaUser}`);
+  }
 
   public muestraPersonas()
   {

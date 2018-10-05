@@ -34,5 +34,9 @@ export class EmpleadosComponent implements OnInit {
   {
     this.conexion.borraUser(empleado);
   }
+  cambiarEmpleado(empleado)
+  {
+    this.conexion.actualizaUser(empleado);
+  }
 
 }
