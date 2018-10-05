@@ -7,6 +7,7 @@ Después de instalar nodeJS, en la terminal:
 	node -v; npm -v; ng -v (para comprobar que está bien instalado)
 	ng new proyecto (puedo elegir la ruta navegando por las carpetas con el comando 'cd')
 	ng serve (arranco el servidor; tengo que estar dentro de la carpeta del proyecto)
+	ng serve --open (arrancar servidor y abrir en navegador)
 		ng serve --port xxx (abrir servidor en el puerto xxx, por defecto es el 4200)
 		Ctrl + C = parar servidor
 	ng g(enerate) c(omponent) micomponente (ojo con la ruta)
@@ -22,8 +23,3 @@ Etiqueta HTML <base>: especifica una ruta por defecto para los enlaces de las im
 
 Nombres de carpetas sin espacios para no tener problemas con la terminal.
 
-VSCode @ Altare.
-SublimeText + VSCode + Angular6 @ CFTIC.
-Notepad++ @ EstudioRedBox.
-NetBeans + BlueFish + Gedit @ casa.
-Atom @ TEIDE.
