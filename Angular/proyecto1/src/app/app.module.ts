@@ -18,7 +18,7 @@ import { DirectivaPropiaDirective } from './patron/directiva-propia.directive';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireStorageModule, AngularFireStorage } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { EmpleadosComponent } from './empleados/empleados.component';
 import { BbddService } from './conexion/bbdd.service';
@@ -52,7 +52,7 @@ const rutas: Routes = [
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule // imports firebase/storage only needed for storage features
   ],
-  providers: [BbddService],
+  providers: [BbddService, AngularFireStorage],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

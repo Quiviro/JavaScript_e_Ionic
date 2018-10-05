@@ -10,15 +10,17 @@ import { BbddService } from '../conexion/bbdd.service';
 export class EmpleadosComponent implements OnInit {
 
   empleados:any;
-  conexion:BbddService;
+  // hemos convertido conexion en propiedad mediante "private".
+  // esta línea ya sobra
+  // conexion:BbddService;
   nuevoEmpleado:any = {
     nombre:"",
     apellidos:"",
     ciudad:""
   }
-  constructor(conexion:BbddService) 
+  constructor(private conexion:BbddService) 
   { 
-    conexion.muestraPersonas().subscribe(empleado => {this.empleados = empleado});
+    this.conexion.muestraPersonas().subscribe(empleado => {this.empleados = empleado});
   }
 
   ngOnInit() {

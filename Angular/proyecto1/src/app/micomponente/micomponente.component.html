@@ -35,7 +35,9 @@
     <br>
     <p>ng g pipe... o no</p>
     <p>{{minusculas | uppercase}}</p>
-    <p>Muestro items desde la base de datos de Firebase</p>
+    <p>Muestro items desde la base de datos de Firebase 
+      <span class="text-danger"> ESTA CONEXIÓN AHORA FALLA</span>
+    </p>
 <ul>
 <li class="text" *ngFor="let item of items | async">
   {{item.nombre}}
