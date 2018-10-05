@@ -9,14 +9,17 @@
 <br>
 <form (ngSubmit)='agregarEmpleado()' style="border: 1px solid blue;padding:10px">
   <p>Nombre<br>
+    <!-- el valor de name debe ser la variable/campo de la bb.dd. -->
     <input type="text" name="nombre" [(ngModel)]= "nuevoEmpleado.nombre">
   <span> {{ nuevoEmpleado.nombre }}</span>
   </p>
   <p>Apellidos<br>
+    <!-- el valor de name debe ser la variable/campo de la bb.dd. -->
     <input type="text" name="apellidos" [(ngModel)]= "nuevoEmpleado.apellidos">
     <span> {{ nuevoEmpleado.apellidos }}</span>
   </p>
   <p>Ciudad<br>
+    <!-- el valor de name debe ser la variable/campo de la bb.dd. -->
     <input type="text" name="ciudad" [(ngModel)]= "nuevoEmpleado.ciudad">
     <span> {{ nuevoEmpleado.ciudad }}</span>
   </p>

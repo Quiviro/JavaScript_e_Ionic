@@ -19,7 +19,9 @@ export class BbddService {
 
   // esto es para conectar el servicio, el componente y la bb.dd.
   persona: Observable<any[]>;
-  constructor(db: AngularFirestore) {
+  constructor(private db: AngularFirestore) {
+    // establece la conexión con la base de datos, como una tubería
+    // pero no descarga la información, solo accede a ella
     this.elementosColeccion = db.collection<Empleado>('empleados');
     this.persona = this.elementosColeccion.valueChanges();
   }
