@@ -33,7 +33,6 @@ export class EmpleadosComponent implements OnInit {
   borrarEmpleado(empleado)
   {
     this.conexion.borraUser(empleado);
-    console.log("hola");
   }
 
 }
