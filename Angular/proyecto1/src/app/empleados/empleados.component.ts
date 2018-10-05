@@ -18,6 +18,12 @@ export class EmpleadosComponent implements OnInit {
     apellidos:"",
     ciudad:""
   }
+  actualizoEmpleado:any = {
+    nombre:"",
+    apellidos:"",
+    ciudad:""
+  }
+
   constructor(private conexion:BbddService) 
   { 
     this.conexion.muestraPersonas().subscribe(empleado => {this.empleados = empleado});
@@ -34,9 +40,13 @@ export class EmpleadosComponent implements OnInit {
   {
     this.conexion.borraUser(empleado);
   }
-  cambiarEmpleado(empleado)
+  actualizarEmpleado(empleado)
   {
-    this.conexion.actualizaUser(empleado);
+    this.actualizoEmpleado = empleado;
+  }
+  actualizaItem()
+  {
+    this.conexion.actualizaUser(this.actualizoEmpleado);
   }
 
 }

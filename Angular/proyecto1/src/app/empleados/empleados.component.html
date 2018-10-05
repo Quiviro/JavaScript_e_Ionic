@@ -25,7 +25,7 @@
   <button class="btn-primary" (click)="borrarEmpleado(empleado.id)">
     Borrar
   </button> &nbsp;
-  <button class="btn-secondary" (click)="actualiza(item)" data-toggle="modal" data-target="#modal">
+  <button class="btn-secondary" (click)="actualizarEmpleado(empleado)" data-toggle="modal" data-target="#modal">
     Actualizar
   </button>
 </li>
@@ -46,23 +46,19 @@
         </div>
         <div class="modal-body">
             <p>Nombre<br>
-              <!-- el valor de name debe ser la variable/campo de la bb.dd. -->
-              <input type="text" name="nombre" [(ngModel)]= "nuevoEmpleado.nombre">
-            <span> {{ nuevoEmpleado.nombre }}</span>
+              <input type="text" [(ngModel)]= "actualizoEmpleado.nombre">
             </p>
             <p>Apellidos<br>
-              <!-- el valor de name debe ser la variable/campo de la bb.dd. -->
-              <input type="text" name="apellidos" [(ngModel)]= "nuevoEmpleado.apellidos">
-              <span> {{ nuevoEmpleado.apellidos }}</span>
+              <input type="text" [(ngModel)]= "actualizoEmpleado.apellidos">
             </p>
             <p>Ciudad<br>
-              <!-- el valor de name debe ser la variable/campo de la bb.dd. -->
-              <input type="text" name="ciudad" [(ngModel)]= "nuevoEmpleado.ciudad">
-              <span> {{ nuevoEmpleado.ciudad }}</span>
+              <input type="text" [(ngModel)]= "actualizoEmpleado.ciudad">
             </p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary" (click)="actualizaItem()" data-dismiss="modal">
+            Guardar cambios
+          </button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
