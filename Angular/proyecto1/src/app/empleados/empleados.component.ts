@@ -30,5 +30,10 @@ export class EmpleadosComponent implements OnInit {
   {
     this.conexion.anadeEmpleado(this.nuevoEmpleado);
   }
+  borrarEmpleado(empleado)
+  {
+    this.conexion.borraUser(empleado);
+    console.log("hola");
+  }
 
 }

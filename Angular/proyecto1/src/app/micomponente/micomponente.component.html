@@ -1,49 +1,49 @@
 <div class="container">
   <p>
-      micomponente es la pera limonera
-    </p>
-    <p>
-      {{texto}}
-    </p>
-    <p class="text-danger">
-      Puntuación: {{ getPuntuacion() }} <br>(coloreado gracias a Bootstrap)
-    </p>
-    <br>
-    <p>Capturo lo que introduce el usuario </p>
-    <input type="text" [(ngModel)]='textoUser' placeholder="Dime un nombre">
-    <span *ngIf="textoUser == null; else conInfo"> Variable vacía</span>
-    <ng-template #conInfo> Variable con contenido</ng-template>
-    <br>
-    <p>Aquí se mostrará lo que escribas: {{textoUser}}</p>
-    <br>
-    <p>Este botón va a mostrar por consola lo que has escrito</p>
-    <button (click)='getName(textoUser)'>getName</button>
-    <br><br>
-    <button id="test">Prueba</button>
-    <br>
-    <h3>Hola</h3>
-    <br>
-    <button class="btn-danger rounded" (click)='botonPulsado=!botonPulsado'> Interruptor </button>
-    <p *ngIf="botonPulsado; else noPulsado">Botón pulsado</p>
-    <ng-template #noPulsado><p>Push the button!</p></ng-template>
-    <br>
-    <li *ngFor="let alumno of alumnos; index as i">{{alumno.nombre}}</li>
-    <br>
-    <br>
-    <p>Hemos creado una directiva</p>
-    <p appDirectivaPropia>Pasa el ratón por encima y verás mi magia...</p>
-    <br>
-    <p>ng g pipe... o no</p>
-    <p>{{minusculas | uppercase}}</p>
-    <p>Muestro items desde la base de datos de Firebase 
-      <span class="text-danger"> ESTA CONEXIÓN AHORA FALLA</span>
-    </p>
-<ul>
-<li class="text" *ngFor="let item of items | async">
-  {{item.nombre}}
-</li>
-</ul>
-<br>
-<app-empleados></app-empleados>
+    micomponente es la pera limonera
+  </p>
+  <p>
+    {{texto}}
+  </p>
+  <p class="text-danger">
+    Puntuación: {{ getPuntuacion() }} <br>(coloreado gracias a Bootstrap)
+  </p>
+  <br>
+  <p>Capturo lo que introduce el usuario </p>
+  <input type="text" [(ngModel)]='textoUser' placeholder="Dime un nombre">
+  <span *ngIf="textoUser == null; else conInfo"> Variable vacía</span>
+  <ng-template #conInfo> Variable con contenido</ng-template>
+  <br>
+  <p>Aquí se mostrará lo que escribas: {{textoUser}}</p>
+  <br>
+  <p>Este botón va a mostrar por consola lo que has escrito</p>
+  <button (click)='getName(textoUser)'>getName</button>
+  <br><br>
+  <button id="test">Prueba</button>
+  <br>
+  <h3>Hola</h3>
+  <br>
+  <button class="btn-danger rounded" (click)='botonPulsado=!botonPulsado'> Interruptor </button>
+  <p *ngIf="botonPulsado; else noPulsado">Botón pulsado</p>
+  <ng-template #noPulsado><p>Push the button!</p></ng-template>
+  <br>
+  <li *ngFor="let alumno of alumnos; index as i">{{alumno.nombre}}</li>
+  <br>
+  <br>
+  <p>Hemos creado una directiva</p>
+  <p appDirectivaPropia>Pasa el ratón por encima y verás mi magia...</p>
+  <br>
+  <p>ng g pipe... o no</p>
+  <p>{{minusculas | uppercase}}</p>
+  <p>Muestro items desde la base de datos de Firebase 
+    <span class="text-danger"> ESTA CONEXIÓN AHORA FALLA</span>
+  </p>
+  <ul>
+  <li class="text" *ngFor="let item of items | async">
+    {{item.nombre}}
+  </li>
+  </ul>
+  <br>
+  <app-empleados></app-empleados>
 </div>
 

@@ -12,7 +12,7 @@ import { Observable } from 'rxjs';
 export class AppComponent {
   title = 'Proyecto1';
   items: Observable<any[]>;
-  constructor(db: AngularFirestore) {
+  constructor(private db: AngularFirestore) {
     this.items = db.collection('items').valueChanges();
   }
 }

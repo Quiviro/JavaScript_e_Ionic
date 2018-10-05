@@ -3,7 +3,11 @@
 
 <ul>
 <li *ngFor="let empleado of empleados">
-  {{empleado.nombre}} {{empleado.apellidos}}, de la ciudad de {{empleado.ciudad}}
+  {{empleado.nombre}} {{empleado.apellidos}} <small>({{ empleado.id }})</small>, de la ciudad de {{empleado.ciudad}} &nbsp;
+  <button class="btn-primary" (click)="borrarEmpleado(empleado.id)">
+    Borrar
+  </button> &nbsp;
+  <button class="btn-secondary">Actualizar</button>
 </li>
 </ul>
 <br>
