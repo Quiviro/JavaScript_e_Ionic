@@ -2,7 +2,6 @@ ionicframework.com
 Desarrollo de aplicaciones móviles multiplataforma con Ionic desde cero
 
 sudo npm install -g cordova ionic@3.8.0
-
 ionic start proyecto blank/sidemenu/tabs (si quiere instalar algo, le digo que no)
 ionic serve
 ionic g page página
