@@ -1,0 +1,18 @@
+ionicframework.com
+Desarrollo de aplicaciones móviles multiplataforma con Ionic desde cero
+
+sudo npm install -g cordova ionic@3.8.0
+ionic start proyecto blank/sidemenu/tabs (si quiere instalar algo, le digo que no)
+ionic serve
+ionic g page página
+  importación manual en app.module.ts (import, declarations, entryComponents)
+
+"config.xml" 
+  id único (¿empresa.departamento.proyecto?)
+  la versión debe actualizarse cuando sea preciso
+
+/www: carpeta donde se publica el proyecto.
+/src/theme: hoja de estilos global.
+
+Android Studio + Xcode
+
