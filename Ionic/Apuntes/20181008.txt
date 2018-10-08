@@ -2,6 +2,7 @@ ionicframework.com
 Desarrollo de aplicaciones móviles multiplataforma con Ionic desde cero
 
 sudo npm install -g cordova ionic@3.8.0
+
 ionic start proyecto blank/sidemenu/tabs (si quiere instalar algo, le digo que no)
 ionic serve
 ionic g page página
@@ -13,6 +14,7 @@ ionic g page página
 
 /www: carpeta donde se publica el proyecto.
 /src/theme: hoja de estilos global.
+/assets: aquí debes guardar los archivos de tu proyecto.
 
 Android Studio + Xcode
 
