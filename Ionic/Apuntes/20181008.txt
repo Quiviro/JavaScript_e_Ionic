@@ -13,7 +13,7 @@ ionic g page página
 
 /www: carpeta donde se publica el proyecto.
 /src/theme: hoja de estilos global.
-/assets: aquí debes guardar los archivos de tu proyecto.
+/assets: aquí debes guardar los archivos multimedia de tu proyecto.
 
 Android Studio + Xcode
 
