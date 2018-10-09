@@ -1,0 +1,7 @@
+animaciones jQuery @ emotika
+
+Lista de tareas dinámica
+TareaModelo.ts, creada a mano
+ViewController
+
+https://github.com/Quiviro/ionic1
